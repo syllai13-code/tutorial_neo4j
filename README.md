@@ -40,7 +40,6 @@ Project_folder
 
 ![Alt text](/screenshots/neo4j_browser1.png?raw=true "neo4j browser")
 
-
 ### - Window 2
 ```console
 chmod +x venv_create.sh
@@ -76,10 +75,7 @@ python3 neo4j_networks.py
 * python script that will generate fake data, upload to the neo4j database, build the network
 * after executing script, interact with your graph via the browser
 
-### - data format
-![Alt text](/screenshots/edgelist_example.png?raw=true "edgelist example")
-* In your favorite language a platform, format your data where every row represents a relationship.
-* More efficient to just have Source, Weight, Target (3 column csv file) + a separate file for demographic / additional properties of your nodes to avoid duplicating data over rows. (ex relationships.csv, properties.csv)
+
 
 
 
@@ -92,7 +88,22 @@ python3 neo4j_networks.py
 ```console
 ../neo4j/bin/neo4j console
 ```
-*  starts neo4j db server
+*  starts neo4j db server with already existing data
 
 
 * then interface with neo4j using your favorite platform (atom, terminal/command line, jupyter, etc) or directly via the browser
+
+
+
+### - data format
+![Alt text](/screenshots/edgelist_example.png?raw=true "edgelist example")
+* In your favorite language a platform, format your data where every row represents a relationship.
+* More efficient to just have Source, Weight, Target (3 column csv file) + a separate file for demographic / additional properties of your nodes to avoid duplicating data over rows. (ex relationships.csv, properties.csv)
+
+
+### - bipartite Patient - Provider network
+![Alt text](/screenshots/patient_provider_graph.png?raw=true "patient provider example")
+
+
+### - projected Provider - Provider network
+![Alt text](/screenshots/provider_provider_graph.png?raw=true "patient provider example")
