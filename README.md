@@ -19,7 +19,7 @@ Project_folder
   │   
   ├── neo4j_plugins/                         # Neo4j algorithms. script will move these to relevant directory
   │   ├── apoc-5.6.0-extended.jar              
-  │   ├── neo4j-graph-data-science-2.3.1.jar         
+  │   ├── neo4j-graph-data-science-2.3.1.jar. #too big to upload. Can be found in Google Drive          
   │   
   ├── test_data/                             # relationship files should be placed in neo4j/import directory
   │   ├── claims_edgelist.csv        
